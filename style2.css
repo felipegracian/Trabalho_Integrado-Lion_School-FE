@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
-
 header{
     height: 12vh;
     width: 100%;
@@ -44,50 +43,47 @@ header{
     padding-left: 0.5rem;
 }
 
-main{
-    height: 70vh;
+.header_main{
+    height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #BCC2E5;
 }
-
-
-.container_main{
+.container_header_main{
     display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-evenly;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 96px;
+    padding-right: 96px;
 }
 
-
-.left_side_container_main{
+.container_Legenda{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 24px;
+}
+.azul{
+    height: 20px;
+    width: 20px;
+    background-color: #3347B0;
+}
+.amarelo{
+    height: 20px;
+    width: 20px;
+    background-color: #E5B657;
 }
 
-.container_left_side_items{
+.container_status_legenda{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 8px;
 }
 
-
-.container_left_side_text{
-    font-size: 3rem;
-}
-.text_first_row_main{
-    display: flex;
-}
-.curso_text_style{
+.status{
     color: #3347B0;
-    padding-left: 1rem;
+    font-size: 1rem;
 }
-
-.center_container_main{
-    display: flex;
-    flex-direction: column;
-    place-self: center;
+.legenda{
+    color: #3347B0;
+    font-size: 1rem;
 }
 
 footer{
@@ -96,36 +92,6 @@ footer{
     background-color: #3347B0;
     align-items: center;
 }
-
-.right_side_container_main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.container_right_side_cards{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.card{
-    height: 150px;
-    width: 300px;
-    background-color: #3347B0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: white;
-    box-shadow: 12px 12px 4px #3347B080;
-}
-.card img{
-    height: 3rem;
-    width: 3rem;
-}
-
 .container_footer{
     display: flex;
     align-items: center;
@@ -170,47 +136,41 @@ footer{
     gap: 20px;
 }
 
-.container_right_side_cards :hover{
-    background-color: lightblue;
-    transition: 0.4s;
-    cursor: pointer;
+main{
+    
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    
 }
 
-.row_card{
+.container_header_main_main{
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: center;
 }
 
-@media (max-width: 640px){
+.curso_name{
+    font-size: 54px;
+    font-weight: 500;
+    color: #3347B0;
+}
 
-    header{
-        height: 20%;
-    }
+.container_Area_Main{
+    background-color: tomato;
+    max-width: 100%;
+    height: 58vh;
+}
 
-    .container_main{
-        display: grid;
-    }
+.card_alunos{
+    height: 200px;
+    width: 150px;
+    background-color:  #3347B0;
 
-    .center_container_main{
-        display: none;
-    }
+}
 
-    main{
-        height: 50%%;
-    }
-
-    .container_left_side_image{
-        display: none;
-    }
-
-    footer{
-        height: 30%;
-    }
-
-    .container_footer{
-        display: grid;
-        gap: 30px;
-    }
-
+.container{
+    display: flex;
+    gap: 16px;
 }
