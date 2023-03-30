@@ -1,15 +1,13 @@
 'use strict'
 
-import {getCursos} from './apicursos'
-const cursos = await getCursos
+import { getCursos } from './apicursos.js'
+const jsonCursos = await getCursos()
 
-const ciarCardCursos = (curso) =>{
+const criarCardCursos = (curso) => {
 
-    const containerCardCuros = document.createElement('div')
-    containerCardCuros.classList.add('container_right_side_cards')
-
-    const cardCursos = document.createElement('div')
+    const cardCursos = document.createElement('a')
     cardCursos.classList.add('card')
+    cardCursos.href = './index2.html'
 
     const rowCards = document.createElement('div')
     rowCards.classList.add('row_card')
@@ -22,8 +20,23 @@ const ciarCardCursos = (curso) =>{
 
     rowCards.append(iconcurso, nomeCurso)
     cardCursos.append(rowCards)
-    containerCardCuros.append(cardCursos)
+    
+    
+    return cardCursos
+    
+}
+
+const carregarCards = () => {
+    const containerCardCuros = document.getElementById('container_right_side_cards')
+
+
+    const campos = jsonCursos.cursos.map(criarCardCursos)
+
+    containerCardCuros.replaceChildren(...campos)
+    
 
 }
 
-ciarCardCursos()
+carregarCards()
+
+

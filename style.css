@@ -197,7 +197,13 @@ footer{
     }
 
     main{
-        height: 50%%;
+        
+    }
+
+    .container_right_side_cards{
+        display: flex;
+        place-content: center;
+        align-items: center;
     }
 
     .container_left_side_image{
@@ -205,12 +211,25 @@ footer{
     }
 
     footer{
-        height: 30%;
+        height: auto;
     }
 
     .container_footer{
         display: grid;
         gap: 30px;
+    }
+
+    .container_right_side_footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        place-content: center;
+    }
+
+    .container_social_apps{
+        display: flex;
+        flex-direction: column;
     }
 
 }
