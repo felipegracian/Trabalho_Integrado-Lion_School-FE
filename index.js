@@ -9,6 +9,10 @@ const criarCardCursos = (curso) => {
     cardCursos.classList.add('card')
     cardCursos.href = './index2.html'
 
+    cardCursos.addEventListener('click', function(){
+        console.log(curso.sigla)
+    })
+
     const rowCards = document.createElement('div')
     rowCards.classList.add('row_card')
 
