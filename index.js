@@ -5,12 +5,13 @@ const jsonCursos = await getCursos()
 
 const criarCardCursos = (curso) => {
 
-    const cardCursos = document.createElement('a')
+    const cardCursos = document.createElement('div')
     cardCursos.classList.add('card')
-    cardCursos.href = './index2.html'
+    
 
     cardCursos.addEventListener('click', function(){
-        console.log(curso.sigla)
+        localStorage.setItem('curso', nomeCurso.textContent)
+        window.location.href = 'http://127.0.0.1:5500/index2.html'
     })
 
     const rowCards = document.createElement('div')

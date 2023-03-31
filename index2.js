@@ -1,8 +1,9 @@
 'use strict'
 
 import { getAlunos } from './apicursos2.js'
+import { getAlunosCurso } from './apicursos2.js'
 const jsonAlunos = await getAlunos()
-console.log('jsonalunos ',jsonAlunos)
+const jsonalunosCurso = await getAlunosCurso()
 const container_container_card_alunos = document.getElementById('container_Area_Main')
 
 const criarCardAlunos = () => {
@@ -51,4 +52,6 @@ const criarCardAlunos = () => {
 
 }
 
-criarCardAlunos()
+const filtrarAlunosPorCurso = () =>{
+    jsonalunosCurso.aluno.forEach()
+}
