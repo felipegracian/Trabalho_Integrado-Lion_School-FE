@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style2.css">
-    <script src="./index2.js" defer type="module"></script>
-    <script src="./apicursos2.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="./js/index2.js" defer type="module"></script>
+    <script src="./js/apicursos.js" defer type="module"></script>
     <title>New Window</title>
 </head>
 
@@ -37,20 +40,20 @@
             <div class="container_header_main">
                 <div class="dropdown">
                     <button class="dropbtn">Status</button>
-                            <div class="dropdown-content">
-                                <div class="linha"></div>
-                                <a >Status</a>
-                                <a >Finalizado</a>
-                                <a >Cursando</a>
-                            </div>
+                    <div class="dropdown-content">
+                        <div class="linha"></div>
+                        <a id="status">Status</a>
+                        <a id="finalizado">Finalizado</a>
+                        <a id="cursando">Cursando</a>
+                    </div>
                 </div>
                 <div class="container_Legenda">
                     <span class="legenda">LEGENDA</span>
                     <div class="container_status_legenda">
                         <div class="azul"></div>
-                        <span class="cursando">Cursando</span>
+                        <span class="cursando_legenda">Cursando</span>
                         <div class="amarelo"></div>
-                        <span class="finalizado">Finalizado</span>
+                        <span class="finalizado_legenda">Finalizado</span>
                     </div>
                 </div>
             </div>
@@ -62,82 +65,27 @@
                 </span>
             </div>
             <div class="container_Area_Main" id="container_Area_Main">
-                <!-- <div class="container" id="container">
-                    <div class="card_alunos_cursando">
+                <div class="container" id="container">
+                    <!-- <div class="card_alunos">
                         <div class="container_card_alunos">
                             <img src="./img/image 1.png" alt="">
                             <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
                         </div>
                     </div>
-                    <div class="card_alunos_cursando">
+                    <div class="card_alunos">
                         <div class="container_card_alunos">
                             <img src="./img/image 1.png" alt="">
                             <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
                         </div>
                     </div>
-                    <div class="card_alunos_finalizado">
+                    <div class="card_alunos">
                         <div class="container_card_alunos">
-                            <img src="./img/image 1 (1).png" alt="">
+                            <img src="./img/image 2.png" alt="">
                             <span>José Matheus da Silva Miranda</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_finalizado">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1 (1).png" alt="">
-                            <span>José Matheus da Silva Miranda</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_finalizado">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1 (1).png" alt="">
-                            <span>José Matheus da Silva Miranda</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_cursando">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1.png" alt="">
-                            <span>HÉLIDA BENTO DE OLIVEIRA LINS</span>
-                        </div>
-                    </div>
-                    <div class="card_alunos_finalizado">
-                        <div class="container_card_alunos">
-                            <img src="./img/image 1 (1).png" alt="">
-                            <span>José Matheus da Silva Miranda</span>
-                        </div>
-                    </div>
-
-                </div> -->
+                        </div> -->
+                </div>
             </div>
+        </div>
         </div>
     </main>
     <footer>

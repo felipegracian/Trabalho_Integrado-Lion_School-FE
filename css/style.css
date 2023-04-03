@@ -196,10 +196,6 @@ footer{
         display: none;
     }
 
-    main{
-        
-    }
-
     .container_right_side_cards{
         display: flex;
         place-content: center;

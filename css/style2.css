@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Roboto', 'Poppins', sans-serif;
 }
 header{
     height: 12vh;
@@ -72,6 +72,15 @@ header{
     width: 20px;
     background-color: #E5B657;
 }
+
+.cursando_legenda, .finalizado_legenda {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: #3347B0;
+
+
+}
+
 
 .container_status_legenda{
     display: flex;
@@ -167,11 +176,11 @@ main{
     height: fit-content;
 }
 
-.card_alunos_cursando{
+.card_alunos {
     height: 300px;
     width: 200px;
     border-radius: 6%;
-    background-color:  #3347B0;
+    background-color:  grey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,18 +189,13 @@ main{
     font-size: 18px;
 
 }
-.card_alunos_finalizado{
-    height: 300px;
-    width: 200px;
-    border-radius: 6%;
-    background-color:  #E5B657;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top start;
-    color: white;
-    font-size: 25px;
 
+.cursando {
+    background-color:  #3347B0; 
+}
+
+.finalizado {
+    background-color: #E5B657;
 }
 
 .container{
@@ -207,20 +211,23 @@ main{
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     place-items: center;
 
 }
 
-.container_card_alunos text{
+.container_card_alunos span{
+    font-family: 'Poppins';
     max-width: 90%;
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 1.125rem;
 }
 
 .container_card_alunos img{
-    height: 11rem;
-    width: 11rem;
+    height: 200px;
+    width: 200px;
 }
 
 
@@ -276,7 +283,9 @@ main{
 }  
 
 .dropdown-content a:hover {
-    background-color: #3347B0;
+    background-color: lightblue;
+    transition: 0.4s;
+    cursor: pointer;
     color: white;
 }
 
