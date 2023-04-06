@@ -39,6 +39,13 @@ const criaCardAlunos = (aluno) => {
         }
     })
     
+    status.addEventListener('click', () => {
+        if (cardAlunos.style.display = 'none') {
+            cardAlunos.style.display = 'flex'
+        }
+    })
+    
+
 
     const containerAlunos = document.createElement('div')
     containerAlunos.classList.add('container_card_alunos')
