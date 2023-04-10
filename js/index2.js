@@ -63,7 +63,7 @@ const criaCardAlunos = (aluno) => {
 
     cardAlunos.addEventListener('click', function(){
         localStorage.setItem('aluno', aluno.matricula)
-        window.location.href = 'http://127.0.0.1:5500/index3.html'
+        window.location.href = 'http://127.0.0.1:5500/project-lion-school-FE/index3.html'
     }) 
 
 
