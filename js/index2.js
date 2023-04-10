@@ -61,6 +61,11 @@ const criaCardAlunos = (aluno) => {
     cardAlunos.append(containerAlunos)
     containerAlunos.append(image, nome)
 
+    cardAlunos.addEventListener('click', function(){
+        localStorage.setItem('aluno', aluno.matricula)
+        window.location.href = 'http://127.0.0.1:5500/index3.html'
+    }) 
+
 
     return cardAlunos
 

@@ -25,4 +25,14 @@ export const getAlunosCurso = async() =>{
     return data
 }
 
+export const getAlunoInfo = async() =>{
+    const url = `http://localhost:8080/v1/lion-school/alunos/${aluno}`
+    const response = await fetch(url)
+    const data = await response.json()
+
+    return data
+}
+
+const aluno = localStorage.getItem('aluno')
+
 const curso = localStorage.getItem('curso')

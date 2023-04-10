@@ -47,7 +47,6 @@ header{
     height: 50px;
     width: 100%;
     background-color: #BCC2E5;
-    position: fixed;
 }
 .container_header_main{
     display: flex;
@@ -190,6 +189,13 @@ main{
 
 }
 
+.card_alunos:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 24px 0px grey;
+}
+
 .cursando {
     background-color:  #3347B0; 
 }
@@ -199,10 +205,15 @@ main{
 }
 
 .container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
     gap: 25px;
     background-color: white;
+    padding-left: 60px; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 150px;
     padding-left: 60px;
 }
 
@@ -291,4 +302,59 @@ main{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media (max-width: 640px){
+    .curso_name{
+        font-size: 36px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    main{
+        padding-bottom: 50px;
+    }
+
+    .container_header_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .container_Area_Main{
+        padding-left: 0%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .container_footer{
+        display: grid;
+        gap: 30px;
+    }
+
+    .container_right_side_footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        place-content: center;
+    }
+
+    .container_social_apps{
+        display: flex;
+        flex-direction: column;
+    }
 }
