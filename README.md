@@ -1,6 +1,6 @@
 # Trabalho_Integrado-Lion_School-FE-Felipe-Graciano
 
-![](./img/prints-para-o-readme-1.PNg)
+![](./img/prints-para-o-readme-1.png)
 
 # Objetivo
 A atividade tem como objetivo integrar as disciplinas de PWFE (Programação web Front-end) e PWBE (Programação web Back-end) do curso de desenvolvimento de sistemas do SENAI Jandira.
