@@ -115,6 +115,7 @@ main{
     text-align: center;
     padding-bottom: 30px;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .container_card_aluno img{
@@ -233,8 +234,13 @@ main{
     }
 
     .container_card_aluno img{
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .container_card_aluno text{
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     .container_graphics{
