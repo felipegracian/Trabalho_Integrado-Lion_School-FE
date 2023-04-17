@@ -73,52 +73,59 @@ const criaCardAlunos = (aluno) => {
 
 const carregarAlunos = () => {
     const container = document.getElementById('container')
-    const alunos = jsonAlunosCurso.aluno.map(criaCardAlunos, criarAnosDeConclusao)
+    const alunos = jsonAlunosCurso.aluno.map(criaCardAlunos)
 
     container.replaceChildren(...alunos)
 }
 
-const pegarAnosConclusao = (aluno) =>{
-    let todosanos = []
+// const pegarAnosConclusao = (aluno1) =>{
+//     let todosanos = []
 
-    jsonAlunosCurso.aluno.forEach(function(curso){
-        todosanos.push(curso.anoConclusao)
-    })
+//     aluno1.forEach(function(curso){
+//         todosanos.push(curso.curso[0].anoConclusao)
+//     })
 
-    let novosAnos = todosanos.filter((este, i) => todosanos.indexOf(este) === i)
-    return novosAnos.sort()
-}
+//     let novosAnos = todosanos.filter((este, i) => todosanos.indexOf(este) === i)
+//     return novosAnos.sort()
+// }
 
-const anos = pegarAnosConclusao(jsonAlunosCurso.aluno)
+// const anoDeConclusão = async(ano) =>{
+//     const jsonDosAlunos = {}
+//     const arrayDosAlunos = []
 
-const criarAnosDeConclusao = (anoAluno) =>{
-    const anosDeFiltragem = document.getElementById('dropdown-content')
+//     jsonAlunosCurso.aluno.forEach(function(aluno){
+//         if(aluno.curso[0].anoConclusao == ano){
+//             arrayDosAlunos.push(aluno)
+//         }
+//     })
+
+//     jsonDosAlunos.alunos = arrayDosAlunos
+//     return jsonDosAlunos
+// }
+
+// const anos = pegarAnosConclusao(jsonAlunosCurso.aluno)
+
+// const criarAnosDeConclusao = (anoAluno) =>{
+//     const anosDeFiltragem = document.getElementById('dropdown')
     
-    const linha = document.createElement('div')
-    linha.classList.add('linha')
+//     anoAluno.forEach(function(ano){
+//         const cardAnos = document.createElement('a')
+//         cardAnos.id = `${ano}`
+//         cardAnos.innerHTML = ano
+//         cardAnos.addEventListener('click', async() =>{
+//             const retorno = await anoDeConclusão(ano)
+//             const jsonAlunosDoAno = retorno.map(criaCardAlunos)
+//             const conteudo = document.createElement('div')
+//             conteudo.classList.add('dropdown-content')
+//             conteudo.replaceChildren(...jsonAlunosDoAno)
+//         })
 
-    anoAluno.forEach(function(pegarAno){
-        const anoConclusao = document.createElement('a')
-        anoConclusao.id = 'ano-conclusao'
+//         anosDeFiltragem.append(cardAnos)
+//     })
+// }
 
-        anoConclusao.innerHTML = pegarAno
-        anoConclusao.addEventListener('click', () =>{
-            
-            if(!(pegarAno == anoConclusao.textContent)){
-                const cardAlunos = document.createElement('div')
-                cardAlunos.classList.add('card_alunos')
-                cardAlunos.style.display = 'none'
-            } 
-        })
 
-        anosDeFiltragem.append(anoConclusao)
-    })
 
-    anosDeFiltragem.append(linha)
 
-    return anosDeFiltragem
-}
-
-criarAnosDeConclusao(anos)
 carregarAlunos()
 

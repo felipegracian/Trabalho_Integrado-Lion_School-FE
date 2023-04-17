@@ -276,6 +276,15 @@ main{
     z-index: 1;
     font-size: 1rem;
 }
+.dropdown-content-years {
+    display: none;
+    position: absolute;
+    background-color: #3347B0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 1rem;
+}
 
 .linha {
     position: absolute;
@@ -292,8 +301,22 @@ main{
     text-align: left;
   padding: 18px 50px 18px 16px;
 }  
+.dropdown-content-years a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  padding: 18px 50px 18px 16px;
+}  
 
 .dropdown-content a:hover {
+    background-color: lightblue;
+    transition: 0.4s;
+    cursor: pointer;
+    color: white;
+}
+.dropdown-content-years a:hover {
     background-color: lightblue;
     transition: 0.4s;
     cursor: pointer;
